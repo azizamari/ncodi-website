@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Heebo', sans-serif;
+}
+
+
+.reviews_section{
+  width: 100vw;
+  height: 100%;
+  background-color:#fafafa;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.reviews_section h1{
+  margin:auto;
+  padding: 2.5rem 0 4rem 0;
+  font-size: 2.5rem;
+  color:#f7443d;
+}
+
+.reviews{
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  width: 90%;
+}
+
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+  display: block;
+}
+
+.icon-end{
+  transform:rotateY(180deg);
+}
+
+.quotes {
+  display:inline-block;
+}
+
+.quote_picture{
+  border-radius: 50%;
+  width: 50px;
+  height: auto;
+  position: relative;
+  left:50%;
+  transform:translateX(-50%);
+}
+
+.quotes-slide {
+  display:inline-block;
+  width: 25vw;
+  padding: 2rem;
+  /* margin: ; */
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 1px 0px 10px 5px #eaeaea;
+  line-height: 1.20;
+  transition: all .5s ease;
+}
+
+.quotes-slide:hover {
+  z-index: 10;
+  /* transform: scale(1.05); */
+  box-shadow: 0px 0px 0px 1px #eaeaea;
+  color:#2a364e;
+}
+blockquote {
+  margin: 0;
+}
+
+.content {
+  color:#2a364e;
+  z-index: 80;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.quote_author{
+  text-align: center;
+  color:#f7443d;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.quote_author-title{
+  text-align: center;
+  color:#2a364e;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.icon {
+  width: 25px;
+  height: 25px;
+  fill: #f7443d;
+}
