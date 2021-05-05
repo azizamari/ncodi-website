@@ -115,7 +115,7 @@ blockquote {
 /* FAQ section */
 .faq_section {
   width: 100%;
-  height: 50vh;
+  height: 100%;
   background-color:white;
   display:flex;
 }
@@ -170,6 +170,7 @@ blockquote {
 .accordion_link i{
   color: #f7443d;
   padding: .5rem; 
+  cursor: pointer;
 }
 
 .accordion_link .bx-minus{
@@ -182,6 +183,9 @@ blockquote {
   position:relative;
   background-color: #2f3c57;
   transition: max-height 650ms;
+}
+.openAnswer{
+  max-height: 20rem;
 }
 .answer::before{
   content:"";
@@ -198,13 +202,13 @@ blockquote {
   color:rgba(255,255,255,0.6);
   padding: 1.5rem;
 }
-.accordion_item:target .answer{
+/* .accordion_item:target .answer{
   max-height: 20rem;
-}
-.accordion_item:target .accordion_link .bx-plus{
+} */
+/* .accordion_item:target .accordion_link .bx-plus{
   display:none;
 }
 .accordion_item:target .accordion_link .bx-minus{
   display:block;
-}
+} */
 /* FAQ section */
