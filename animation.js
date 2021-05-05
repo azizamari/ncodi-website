@@ -7,13 +7,13 @@ questions.forEach(question=>question.addEventListener("click",()=>{
     question.querySelector(".accordion_link .bx-minus").style.display="none";
   }
   else {  
-    questions.forEach(q=>{
-      q.querySelector(".answer").classList.remove("openAnswer");
-      question.querySelector(".accordion_link .bx-plus").style.display="none";
-      question.querySelector(".accordion_link .bx-minus").style.display="block";
-    });
-    console.log(this)
-    question.querySelector(".answer").classList.add("openAnswer");
+    let open=document.querySelectorAll(".openAnswer");
+    if(open.length!==0){
+      open[0].classList.remove("openAnswer");
+      open[0].parentElement.querySelector(".accordion_link .bx-plus").style.display="block";
+      open[0].parentElement.querySelector(".accordion_link .bx-minus").style.display="none";
+    }
+    currentAnswer.classList.add("openAnswer");
     question.querySelector(".accordion_link .bx-plus").style.display="none";
     question.querySelector(".accordion_link .bx-minus").style.display="block";
   }
