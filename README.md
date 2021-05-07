@@ -1,5 +1,5 @@
 # ncodi-website
-## This is going to be the official website for Ncodi language
+## This is going to be the official website for Ncodi
 #### Roadmap: 
 * Finish simple frontend (about, FAQ, reviews, Hero, contact,..)
 * Add official docs (probably use some third party-tool for this)
