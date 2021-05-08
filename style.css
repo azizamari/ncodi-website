@@ -9,16 +9,10 @@
 
 
 .swiper-container {
-  width: 100%;
+  width: 80%;
   height: 100%;
 }
-
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -31,13 +25,6 @@
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 /* reviews section */
@@ -57,13 +44,13 @@
   color:#f7443d;
 }
 
-.reviews{
+/* .reviews{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
-  width: 90%;
-}
+  width: 100%;
+} */
 
 
 .text-center {
@@ -90,7 +77,7 @@
 
 .quote_picture{
   border-radius: 50%;
-  width: 50px;
+  width: 60px;
   height: auto;
   position: relative;
   left:50%;
@@ -99,13 +86,12 @@
 
 .quotes-slide {
   display:inline-block;
-  width: 25rem;
-  padding: 2rem;
-  /* margin: ; */
+  width: 20rem;
+  padding: 1rem;
   background-color: white;
   cursor: pointer;
   box-shadow: 1px 0px 10px 5px #eaeaea;
-  line-height: 1.20;
+  line-height: 1.10;
   transition: all .5s ease;
 }
 
@@ -122,6 +108,7 @@ blockquote {
 .content {
   color:#2a364e;
   z-index: 80;
+  font-size:1rem;
   font-weight: bold;
   padding: 0.5rem;
 }
@@ -130,13 +117,13 @@ blockquote {
   text-align: center;
   color:#f7443d;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .quote_author-title{
   text-align: center;
   color:#2a364e;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .icon {
   width: 25px;
@@ -162,7 +149,7 @@ blockquote {
 .faq{
   display: flex;
   margin: auto;
-  width: 90%;
+  width: 95%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -235,13 +222,31 @@ blockquote {
   color:rgba(255,255,255,0.6);
   padding: 1.5rem;
 }
-/* .accordion_item:target .answer{
-  max-height: 20rem;
-} */
-/* .accordion_item:target .accordion_link .bx-plus{
-  display:none;
-}
-.accordion_item:target .accordion_link .bx-minus{
-  display:block;
-} */
 /* FAQ section */
+
+@media only screen and (max-width:460px)
+{
+  .content {
+    font-size:0.75rem;
+  }
+  .quotes-slide {
+    display:inline-block;
+    width: 15rem;
+    padding: 0.7rem;
+  }
+}
+@media only screen and (max-width:768px)
+{
+  .accordion_link{
+    font-size: 1.2rem;
+  }
+  .answer p{
+    font-size: 0.8rem;
+  }
+  .faq h1{
+    font-size:1.6rem;
+  }
+  .reviews_section h1{
+    font-size:1.9rem;
+  }
+}
