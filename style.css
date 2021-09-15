@@ -129,7 +129,7 @@ nav ul.slide{
     height: 70vh;
     position: relative;
     overflow: hidden;
-    background: url("../images/background.jpg");
+    background: url("./images/background.jpg");
     background-size: cover; /* or contain depending on what you want */
     background-position: center center;
     background-repeat: no-repeat;
